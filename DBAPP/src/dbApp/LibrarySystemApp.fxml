@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbApp.LibrarySystemAppController">
+   <top>
+      <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Branch">
+            <items>
+              <MenuItem fx:id="findBranchMenu" mnemonicParsing="false" onAction="#findBranchClicked" text="Find a branch" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Library Book">
+            <items>
+              <MenuItem fx:id="findBookISBNMenu" mnemonicParsing="false" onAction="#findBookISBNClicked" text="Find a book by ISBN" />
+                  <MenuItem fx:id="findBookBranchMenu" mnemonicParsing="false" onAction="#findBookBranchClicked" text="Find a book by Branch" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Borrower">
+            <items>
+              <MenuItem fx:id="findBorrowerMenu" mnemonicParsing="false" onAction="#findBorrowerClicked" text="Find a Borrower" />
+                  <MenuItem fx:id="listBorrowersMenu" mnemonicParsing="false" onAction="#listBorrowersClicked" text="List Borrowers" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Transactions">
+              <items>
+                <MenuItem fx:id="borrowBookMenu" mnemonicParsing="false" onAction="#borrowBookClicked" text="Borrow Book" />
+                  <MenuItem fx:id="returnBookMenu" mnemonicParsing="false" onAction="#returnBookClicked" text="Return a Book" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Other">
+              <items>
+                <MenuItem fx:id="btnExit" mnemonicParsing="false" onAction="#btnExitClicked" text="Exit" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="473.0" prefWidth="434.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="dbApp.BorrowBookController">
+   <children>
+      <Label fx:id="lblLibraryCardID" layoutY="13.0" prefHeight="25.0" prefWidth="182.0" text="Please enter your library card ID:" />
+      <TextField fx:id="txtLibraryCardID" layoutX="182.0" layoutY="13.0" />
+      <Label fx:id="lblBranch" layoutX="7.0" layoutY="50.0" text="Select a branch:" />
+      <ComboBox fx:id="comboBoxBranch" layoutX="182.0" layoutY="46.0" prefWidth="150.0" />
+      <Button fx:id="btnEnter" layoutX="194.0" layoutY="83.0" mnemonicParsing="false" onAction="#btnEnterClicked" text="Enter" />
+      <Button fx:id="btnBack" layoutX="141.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnBackClicked" text="Back" />
+      <Button fx:id="btnCheckout" layoutX="203.0" layoutY="373.0" mnemonicParsing="false" onAction="#btnCheckoutClicked" text="Check out" visible="false" />
+      <ListView fx:id="listViewBooks" layoutX="91.0" layoutY="119.0" prefHeight="141.0" prefWidth="250.0" visible="false" />
+   </children>
+</AnchorPane>

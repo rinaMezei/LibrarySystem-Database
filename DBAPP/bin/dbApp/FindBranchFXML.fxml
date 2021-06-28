@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<BorderPane prefHeight="93.0" prefWidth="334.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="dbApp.FindBranchController">
+   <top>
+      <HBox prefHeight="51.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblBranchName" text="Enter Branch Name:" />
+            <TextField fx:id="txtBranchName" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Label fx:id="lblResults" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox maxWidth="-Infinity" prefHeight="41.0" prefWidth="88.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnBack" mnemonicParsing="false" onAction="#btnBackClicked" text="Back" />
+            <Button fx:id="btnEnter" mnemonicParsing="false" onAction="#btnEnterClicked" text="Enter" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
